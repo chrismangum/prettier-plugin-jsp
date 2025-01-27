@@ -11,7 +11,7 @@ const ESCAPE_TAG_DASH_REGEX = new RegExp(ESCAPE_TAG_DASH, "g");
 const escapeTag = (/** @type {string} */ text) => {
   if (text == null) return "";
   return text
-    .replace(COLON_REGEX, ESCAPE_TAG_COLON)
+    // .replace(COLON_REGEX, ESCAPE_TAG_COLON)
     .replace(DASH_REGEX, ESCAPE_TAG_DASH);
 };
 
